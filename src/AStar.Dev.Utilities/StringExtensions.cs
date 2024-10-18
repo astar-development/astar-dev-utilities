@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace AStar.Utilities;
+namespace AStar.Dev.Utilities;
 
 /// <summary>
 /// The <see cref="StringExtensions" /> class contains some useful methods to enable checks to be

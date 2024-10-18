@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace AStar.Utilities;
+namespace AStar.Dev.Utilities;
 
 /// <summary>
 /// The <see cref="ObjectExtensions" /> class contains some useful methods to enable various tasks
