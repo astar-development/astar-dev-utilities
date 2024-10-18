@@ -16,12 +16,10 @@
         </member>
         <member name="T:AStar.Utilities.EnumExtensions">
              <summary>
-            
              </summary>
         </member>
         <member name="M:AStar.Utilities.EnumExtensions.ParseEnum``1(System.String)">
              <summary>
-            
              </summary>
              <typeparam name="T"></typeparam>
              <param name="value"></param>

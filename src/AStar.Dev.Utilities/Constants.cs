@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace AStar.Utilities;
+namespace AStar.Dev.Utilities;
 
 /// <summary>
 /// The <see href="Constants"></see>see> class contains static / constant properties to simplify and centralise various settings.
