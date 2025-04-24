@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{538ADD9A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unit", "unit", "{4FDD8291-A186-40FE-BB14-CA60EB3274FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AStar.Dev.Utilities.Unit.Tests", "tests\unit\AStar.Dev.Utilities.Unit.Tests\AStar.Dev.Utilities.Unit.Tests.csproj", "{713622F6-BCF6-47AE-BBD2-45CCE257C664}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AStar.Dev.Utilities.Tests.Unit", "tests\unit\AStar.Dev.Utilities.Tests.Unit\AStar.Dev.Utilities.Tests.Unit.csproj", "{713622F6-BCF6-47AE-BBD2-45CCE257C664}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{21399C8D-85EE-4D9A-B57C-6EF16EEC03EC}"
 EndProject
