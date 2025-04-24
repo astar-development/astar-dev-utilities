@@ -8,7 +8,6 @@
         <Title>AStar Dev Utilities</Title>
         <Company>AStar Development</Company>
         <Copyright>AStar Development, 2024</Copyright>
-        <PackageReadmeFile>Readme.md</PackageReadmeFile>
         <IncludeSymbols>True</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
         <GenerateDocumentationFile>True</GenerateDocumentationFile>
@@ -25,12 +24,10 @@
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
         <DocumentationFile>$(AssemblyName).xml</DocumentationFile>
+        <PackageIcon>AStar.png</PackageIcon>
+        <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+        <AnalysisLevel>latest-recommended</AnalysisLevel>
     </PropertyGroup>
-
-    <ItemGroup>
-        <None Include="LICENSE" Pack="true" PackagePath=""/>
-        <None Include="Readme.md" Pack="true" PackagePath=""/>
-    </ItemGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
         <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
@@ -43,13 +40,28 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <None Include="..\..\AStar.png">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+      <None Include="..\..\LICENSE">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+      <None Include="..\..\Readme.md">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
         <None Update="AStar.png">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="TestableIO.System.IO.Abstractions.Wrappers" Version="22.0.14"/>
+        <PackageReference Include="TestableIO.System.IO.Abstractions.Wrappers" Version="22.0.14" />
     </ItemGroup>
 
 </Project>

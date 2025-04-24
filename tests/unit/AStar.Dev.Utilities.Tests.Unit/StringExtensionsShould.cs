@@ -8,26 +8,26 @@ public sealed class StringExtensionsShould
     private readonly string  whitespaceString = " ";
 
     [Fact]
-    public void ContainTheIsNullMethodWhichReturnsTheResult() =>
-        nullString.IsNull().ShouldBeTrue();
+    public void ContainTheIsNullMethodWhichReturnsTheResult()
+        => nullString.IsNull().ShouldBeTrue();
 
     [Fact]
-    public void ContainTheIsNotNullMethodWhichReturnsTheResult() =>
-        notNullString.IsNotNull().ShouldBeTrue();
+    public void ContainTheIsNotNullMethodWhichReturnsTheResult()
+        => notNullString.IsNotNull().ShouldBeTrue();
 
     [Fact]
-    public void ContainTheIsNullOrWhiteSpaceMethodWhichReturnsTheResult() =>
-        whitespaceString.IsNullOrWhiteSpace().ShouldBeTrue();
+    public void ContainTheIsNullOrWhiteSpaceMethodWhichReturnsTheResult()
+        => whitespaceString.IsNullOrWhiteSpace().ShouldBeTrue();
 
     [Fact]
-    public void ContainTheIsNotNullOrWhiteSpaceMethodWhichReturnsTheResult() =>
-        notNullString.IsNotNullOrWhiteSpace().ShouldBeTrue();
+    public void ContainTheIsNotNullOrWhiteSpaceMethodWhichReturnsTheResult()
+        => notNullString.IsNotNullOrWhiteSpace().ShouldBeTrue();
 
     [Fact]
-    public void ContainTheFromJsonMethodWhichReturnsTheResult() =>
-        anyJson.FromJson<AnyClass>().ShouldBeEquivalentTo(new AnyClass());
+    public void ContainTheFromJsonMethodWhichReturnsTheResult()
+        => anyJson.FromJson<AnyClass>().ShouldBeEquivalentTo(new AnyClass());
 
     [Fact]
-    public void ContainTheFromJsonTakingJsonSerializerOptionsMethodWhichReturnsTheResult() =>
-        anyJson.FromJson<AnyClass>(new()).ShouldBeEquivalentTo(new AnyClass());
+    public void ContainTheFromJsonTakingJsonSerializerOptionsMethodWhichReturnsTheResult()
+        => anyJson.FromJson<AnyClass>(new()).ShouldBeEquivalentTo(new AnyClass());
 }
