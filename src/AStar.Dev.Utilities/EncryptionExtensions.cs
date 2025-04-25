@@ -31,7 +31,7 @@ public static class EncryptionExtensions
         aesAlg.Key = Encoding.UTF8.GetBytes(key ?? Key);
         aesAlg.IV  = Encoding.UTF8.GetBytes(iv  ?? Iv);
 
-        ICryptoTransform encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV);
+        var encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV);
 
         using var msEncrypt = new MemoryStream();
         using var csEncrypt = new CryptoStream(msEncrypt, encryptor, CryptoStreamMode.Write);
@@ -64,7 +64,7 @@ public static class EncryptionExtensions
         aesAlg.Key = Encoding.UTF8.GetBytes(key ?? Key);
         aesAlg.IV  = Encoding.UTF8.GetBytes(iv  ?? Iv);
 
-        ICryptoTransform decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
+        var decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
 
         using var msDecrypt = new MemoryStream(Convert.FromBase64String(encryptedText));
 

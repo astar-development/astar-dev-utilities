@@ -1,4 +1,3 @@
-using AStar.Dev.Utilities;
 using JetBrains.Annotations;
 
 namespace AStar.Dev.Utilities;
@@ -7,8 +6,8 @@ namespace AStar.Dev.Utilities;
 public class RegexExtensionsShould
 {
     [Theory]
-    [InlineData("SOMETEXT",  false)]
-    [InlineData("12345678",  false)]
+    [InlineData("SOMETEXT", false)]
+    [InlineData("12345678", false)]
     [InlineData("SomeText", true)]
     public void ReturnTheExpectedResultForTheLowercaseLetterCheck(string stringToCheck,  bool expected)
         => stringToCheck.ContainsAtLeastOneLowercaseLetter().ShouldBe(expected);
@@ -21,8 +20,8 @@ public class RegexExtensionsShould
         => stringToCheck.ContainsAtLeastOneUppercaseLetter().ShouldBe(expected);
 
     [Theory]
-    [InlineData("SOMETEXT", false)]
-    [InlineData("12345678", true)]
+    [InlineData("SOMETEXT",  false)]
+    [InlineData("12345678",  true)]
     [InlineData("SomeText1", true)]
     public void ReturnTheExpectedResultForTheAtleastOneDigitCheck(string stringToCheck,  bool expected)
         => stringToCheck.ContainsAtLeastOneDigit().ShouldBe(expected);
@@ -40,5 +39,5 @@ public class RegexExtensionsShould
     [InlineData("Some}Text",  true)]
     [InlineData("Some~Text",  true)]
     public void ReturnTheExpectedResultForTheAtLeastOneSpecialCharacterCheck(string stringToCheck,  bool expected)
-    => stringToCheck.ContainsAtLeastOneSpecialCharacter().ShouldBe(expected);
+        => stringToCheck.ContainsAtLeastOneSpecialCharacter().ShouldBe(expected);
 }

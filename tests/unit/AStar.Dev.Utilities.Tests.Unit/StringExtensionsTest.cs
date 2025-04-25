@@ -1,4 +1,3 @@
-using AStar.Dev.Utilities;
 using JetBrains.Annotations;
 
 namespace AStar.Dev.Utilities;
@@ -6,7 +5,6 @@ namespace AStar.Dev.Utilities;
 [TestSubject(typeof(StringExtensions))]
 public class StringExtensionsTest
 {
-
     [Theory]
     [InlineData("",              false)]
     [InlineData("textfile.txt",  false)]

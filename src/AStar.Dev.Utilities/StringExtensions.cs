@@ -70,14 +70,14 @@ public static class StringExtensions
     /// <returns><c>true</c> if the string represents a supported image type. Otherwise, <c>false</c></returns>
     public static bool IsImage(this string fileInfo)
     {
-        string fileNameLower = fileInfo.ToLowerInvariant();
+        var fileNameLower = fileInfo.ToLowerInvariant();
 
-        return fileNameLower.EndsWith("jpg", StringComparison.InvariantCultureIgnoreCase)
+        return fileNameLower.EndsWith("jpg",     StringComparison.InvariantCultureIgnoreCase)
                || fileNameLower.EndsWith("jpeg", StringComparison.InvariantCultureIgnoreCase)
-               || fileNameLower.EndsWith("bmp", StringComparison.InvariantCultureIgnoreCase)
-               || fileNameLower.EndsWith("png", StringComparison.InvariantCultureIgnoreCase)
+               || fileNameLower.EndsWith("bmp",  StringComparison.InvariantCultureIgnoreCase)
+               || fileNameLower.EndsWith("png",  StringComparison.InvariantCultureIgnoreCase)
                || fileNameLower.EndsWith("jfif", StringComparison.InvariantCultureIgnoreCase)
-               || fileNameLower.EndsWith("jif", StringComparison.InvariantCultureIgnoreCase)
-               || fileNameLower.EndsWith("gif", StringComparison.InvariantCultureIgnoreCase);
+               || fileNameLower.EndsWith("jif",  StringComparison.InvariantCultureIgnoreCase)
+               || fileNameLower.EndsWith("gif",  StringComparison.InvariantCultureIgnoreCase);
     }
 }
