@@ -1,4 +1,4 @@
-﻿namespace AStar.Dev.Utilities.Unit.Tests;
+﻿namespace AStar.Dev.Utilities;
 
 internal enum AnyEnum
 {

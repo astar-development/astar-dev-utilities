@@ -1,16 +1,16 @@
-﻿namespace AStar.Dev.Utilities.Unit.Tests;
+﻿namespace AStar.Dev.Utilities;
 
-public class EnumExtensionsShould
+public sealed class EnumExtensionsShould
 {
     [Fact]
     public void ContainTheParseMethodReturningTheExpectedValue()
-            => "Defined".ParseEnum<AnyEnum>().Should().Be(AnyEnum.Defined);
+        => "Defined".ParseEnum<AnyEnum>().ShouldBe(AnyEnum.Defined);
 
     [Fact]
     public void ContainTheParseMethodWhichThrowsArgumentExceptionWhenTheValueIsNotFound()
     {
         Action parseStringAction = () => "ThisDoesntExitst".ParseEnum<AnyEnum>();
 
-        _ = parseStringAction.Should().Throw<ArgumentException>();
+        _ = parseStringAction.ShouldThrow<ArgumentException>();
     }
 }

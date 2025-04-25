@@ -1,6 +1,6 @@
-﻿namespace AStar.Dev.Utilities.Unit.Tests;
+﻿namespace AStar.Dev.Utilities;
 
-internal class AnyClass
+internal sealed class AnyClass
 {
     public int AnyInt { get; set; }
 

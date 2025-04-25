@@ -17,6 +17,7 @@ A collection of useful utilities. At the moment, the collection is small but wil
 * ToJson - as you might expect, converts the object to the appropriate JSON representation.
 
 ## GitHub build
+
 [![Build and test solution](https://github.com/astar-development/astar-dev-utilities/actions/workflows/dotnet.yml/badge.svg)](https://github.com/astar-development/astar-dev-utilities/actions/workflows/dotnet.yml)
 
 ## SonarCloud Analysis Results

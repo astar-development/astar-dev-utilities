@@ -7,11 +7,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{538ADD9A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unit", "unit", "{4FDD8291-A186-40FE-BB14-CA60EB3274FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AStar.Dev.Utilities.Unit.Tests", "tests\unit\AStar.Dev.Utilities.Unit.Tests\AStar.Dev.Utilities.Unit.Tests.csproj", "{713622F6-BCF6-47AE-BBD2-45CCE257C664}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AStar.Dev.Utilities.Tests.Unit", "tests\unit\AStar.Dev.Utilities.Tests.Unit\AStar.Dev.Utilities.Tests.Unit.csproj", "{713622F6-BCF6-47AE-BBD2-45CCE257C664}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{21399C8D-85EE-4D9A-B57C-6EF16EEC03EC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AStar.Dev.Utilities", "src\AStar.Dev.Utilities\AStar.Dev.Utilities.csproj", "{22F07837-7837-4AC9-9CBC-8906325B99A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5F0E0041-1B48-4D79-A175-C0D04DD2F303}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		LICENSE = LICENSE
+		AStar.png = AStar.png
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{58D4DA15-FD32-449A-9DDC-048271C65846}"
+	ProjectSection(SolutionItems) = preProject
+		.github\dependabot.yml = .github\dependabot.yml
+		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
