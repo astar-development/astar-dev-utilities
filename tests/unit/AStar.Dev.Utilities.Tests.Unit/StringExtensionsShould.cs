@@ -4,7 +4,7 @@ public sealed class StringExtensionsShould
 {
     private readonly string  anyJson          = "{\"AnyInt\":0,\"AnyString\":\"\"}";
     private readonly string  notNullString    = "value does not matter";
-    private readonly string? nullString       = null;
+    private readonly string? nullString       = null!;
     private readonly string  whitespaceString = " ";
 
     [Fact]
