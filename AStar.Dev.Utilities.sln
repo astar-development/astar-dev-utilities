@@ -24,6 +24,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{58D4DA15-FD32-449A-9DDC-048271C65846}"
 	ProjectSection(SolutionItems) = preProject
 		.github\dependabot.yml = .github\dependabot.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{4FA6EC7F-8049-496E-BBEE-7374E3FA4E70}"
+	ProjectSection(SolutionItems) = preProject
 		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
 	EndProjectSection
 EndProject
@@ -49,5 +53,6 @@ Global
 		{4FDD8291-A186-40FE-BB14-CA60EB3274FF} = {538ADD9A-B30C-4385-B1B0-5EF853807ED1}
 		{713622F6-BCF6-47AE-BBD2-45CCE257C664} = {4FDD8291-A186-40FE-BB14-CA60EB3274FF}
 		{22F07837-7837-4AC9-9CBC-8906325B99A7} = {21399C8D-85EE-4D9A-B57C-6EF16EEC03EC}
+		{4FA6EC7F-8049-496E-BBEE-7374E3FA4E70} = {58D4DA15-FD32-449A-9DDC-048271C65846}
 	EndGlobalSection
 EndGlobal
