@@ -59,8 +59,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="AStar.Dev.Technical.Debt.Reporting" Version="0.1.0"/>
-        <PackageReference Include="TestableIO.System.IO.Abstractions.Wrappers" Version="22.0.14"/>
+        <PackageReference Include="AStar.Dev.Technical.Debt.Reporting" Version="0.1.0" />
+        <PackageReference Include="TestableIO.System.IO.Abstractions.Wrappers" Version="22.0.15" />
     </ItemGroup>
 
 </Project>
